@@ -14,4 +14,9 @@ public class InventoryTracker {
     public void setStockLevel(int stockLevel) {
         this.stockLevel = stockLevel;
     }
+    
+    // New method added
+    public boolean checkStockLevel(int threshold) {
+        return stockLevel >= threshold;
+    }
 }
