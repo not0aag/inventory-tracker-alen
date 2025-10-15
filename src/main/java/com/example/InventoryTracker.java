@@ -19,4 +19,11 @@ public class InventoryTracker {
     public boolean checkStockLevel(int threshold) {
         return stockLevel >= threshold;
     }
+    
+    // Second new method added
+    public void alertLowStock(int threshold) {
+        if (stockLevel < threshold) {
+            System.out.println("Alert: Stock level is low! Current: " + stockLevel);
+        }
+    }
 }
